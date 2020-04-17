@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout/Layout'
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
+// import logo from './logo.svg';
+// import Header from './components/Header/Header'
+
+// import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <div className={styles.Appheader}>We are styled!</div>
+      
+      
+      <Header/> */}
+    <Layout>
+      <BurgerBuilder/>
+      </Layout>
     </div>
   );
 }
