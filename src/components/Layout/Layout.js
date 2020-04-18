@@ -1,6 +1,6 @@
 import React from "react";
 import Aux from "../../hoc/auxillary";
-import classes from './Layout.module.css'
+import classes from "./Layout.module.css";
 const Layout = (props) => (
   <Aux>
     <div>Toobar Side drawer, Backdrop</div>
