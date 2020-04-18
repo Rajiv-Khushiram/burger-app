@@ -4,6 +4,7 @@ import Aux from "../../../hoc/auxillary";
 import Backdrop from "../Backdrop/Backdrop";
 
 const Modal = (props) => (
+
   <Aux>
     <Backdrop show={props.show} clicked={props.modalClosed}/>
     <div
@@ -18,4 +19,4 @@ const Modal = (props) => (
   </Aux>
 );
 
-export default Modal;
+export default React.memo(Modal);
